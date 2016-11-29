@@ -1,0 +1,108 @@
+SDL TEMPLATE
+
+Class Template Names:  "myGame.h myInt.h SDLpractice.cpp"
+
+#include "myInts.h"
+
+
+
+class myGame
+{
+private:
+	SDL_Surface *screen;
+	bool gameRunning;
+public:
+	myGame();
+	void gameLoad();
+	void gameInit();
+	void gameInput();
+	void gameDraw();
+	void gameUpdate();
+	void gameCleanUp();
+	bool runningState();
+};
+
+myGame::myGame()
+{
+}
+void myGame::gameLoad()
+{
+}
+void myGame::gameInit()
+{
+	gameRunning = true;
+	screen = SDL_SetVideoMode(SCREEN_WIDTH,SCREEN_HEIGHT,SCREEN_BPP, SDL_SWSURFACE);
+	SDL_WM_SetCaption("Blah", NULL);
+}
+void myGame::gameInput()
+{
+	SDL_Event event;
+	if(SDL_PollEvent(&event))
+	{
+		if(event.type == SDL_QUIT)
+		{
+			gameRunning = false;
+		}
+	}
+}
+void myGame::gameDraw()
+{
+}
+void myGame::gameUpdate()
+{
+}
+void myGame::gameCleanUp()
+{
+	SDL_Quit();
+	exit(0);
+
+}
+bool myGame::runningState()
+{
+	return gameRunning;
+}
+
+intergers template
+
+
+
+const int SCREEN_WIDTH = 680;
+const int SCREEN_HEIGHT = 400;
+const int SCREEN_BPP = 32;
+	
+main template
+
+#include "SDL.h"
+#include "SDL_image.h"
+#include "SDL_audio.h"
+#include "SDL_image.h"
+#include "myGame.h"
+//http://www.youtube.com/watch?v=ITJmRH04M-I
+
+int main (int argc, char* arv[])
+{
+
+	myGame myGame;
+
+	//Load
+	myGame.gameLoad();
+	//Init
+	myGame.gameInit();
+	//While game is running
+	while (myGame.runningState() == true)
+	{
+
+		//Handle input
+		myGame.gameInput();
+
+		//Draw things to screen
+		myGame.gameDraw();
+
+		//Update
+		myGame.gameUpdate();
+	}
+	//Cleanup
+	myGame.gameCleanUp();
+
+	return 0;
+}
