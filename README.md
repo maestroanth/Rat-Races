@@ -4,7 +4,7 @@ About: Rat Races was my first serious school project way back for my associates 
 
 *However, my apologies for the "bloatiness" of this repository because with it has some irrelevant things such as practice files and duplicate files (so I wouldn't have to go in and edit all the path locations again through visual studio) when I made the .exe file.  As a courtesy I did add a git ignore file post upload so it shouldn't index the larger files if you do start a repository for this.*
 
-Languages: This was created in Visual Studio using C++ and the SDL library.  It's probably best to recreate this setup if you want to work on it.
+Languages: This was created in Visual Studio using C++ and the SDL library.  It's probably best to recreate this setup if you want to work on it. Good idea to contact me too.
 
 Purpose: This project was my first attempt to be a "master of all trades". By this I mean: I drew the mouse and animation frames, made the sound effects, wrote the music using Finale, played some of the soundbytes on the piano (such as the fox logo theme for the victory screen soundbyte, and a annoying crashing piano soundbyte for the losing screen), while coding it all FROM SCRATCH to put it all together (no copy and pasting or handtyping what someone else wrote verbatim!).  Took A LOT of time needless to say.
 
