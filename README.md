@@ -1,6 +1,6 @@
 # Rat-Races
 
-About: Rat Races was my first serious school project way back for my associates degree at Front Range (Like 4 or 5 years ago now).  At it's heart, Rat Race is just a fun experimental pac-man style video game. Although I'm not currently doing anything more with it, I highly encourage anybody who downloads this repository to try recoding things and come up with something new and awesome! 
+About: Rat Races was my first serious school project way back for my associates degree at Front Range (Like 3 or 4 years ago now).  At it's heart, Rat Race is just a fun experimental pac-man style video game. Although I'm not currently doing anything more with it, I highly encourage anybody who downloads this repository to try recoding things and come up with something new and awesome! 
 
 *However, my apologies for the "bloatiness" of this repository because with it has some irrelevant things such as practice files and duplicate files (so I wouldn't have to go in and edit all the path locations again through visual studio) when I made the .exe file.  As a courtesy I did add a git ignore file post upload so it shouldn't index the larger files if you do start a repository for this.*
  
